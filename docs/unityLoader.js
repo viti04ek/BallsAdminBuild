@@ -154,7 +154,7 @@ function getSafeTopFromTelegram() {
 function sendSafeAreaToUnity(){
   const px = getSafeTopFromTelegram();
   if (window.unityInstance){
-    try { window.unityInstance.SendMessage('PlayerDataManager','SetSafeArea', String(px)); } catch {}
+    try { window.unityInstance.SendMessage('SafeAreaManager','SetSafeArea', String(px)); } catch {}
   }
 }
 
